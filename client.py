@@ -10,7 +10,7 @@ pygame.display.set_caption("Client")
 client_number = 0
 
 
-class Player():
+class Player:
     def __init__(self, x, y, width, height, color):
         self.x = x
         self.y = y
@@ -35,6 +35,7 @@ class Player():
         if keys[pygame.K_DOWN]:
             self.y += self.vel
         self.update()
+
     def update(self):
         self.rect = (self.x, self.y, self.width, self.height)
 
