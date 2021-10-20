@@ -33,7 +33,7 @@ class Player():
         if keys[pygame.K_DOWN]:
             self.y += self.vel
 
-        self.rect = (self.x , self.y, self.width, self.height)
+        self.rect = (self.x, self.y, self.width, self.height)
 
 
 def redrawWindow(window, player):
@@ -54,7 +54,5 @@ def main():
         p.move()
         redrawWindow(window, p)
 
-# if __name__ == "__client__":
-#     main()
 
 main()
